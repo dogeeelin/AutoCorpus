@@ -1,0 +1,7 @@
+output/
+paper-md/
+paper-md-new/
+paper-pdf/
+*.json
+*.pdf
+*.txt
