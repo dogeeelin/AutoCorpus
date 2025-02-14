@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # 定义关键词数组
-keywords=("经济学" "光学" "化学" "语言学")
+keywords=("光学" "化学")
 
 # 遍历每个关键词
 for keyword in "${keywords[@]}"; do
     echo "Processing files for: $keyword"
     
     # 创建输出目录（如果不存在）
-    mkdir -p "output/$keyword"
+    mkdir -p "output/${keyword}-50"
     
     # 构建源文件夹路径
-    source_dir="paper-pdf/${keyword}-100-pdf"
+    source_dir="paper-pdf/${keyword}-50-pdf"
     
     # 检查源文件夹是否存在
     if [ ! -d "$source_dir" ]; then
